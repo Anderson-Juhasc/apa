@@ -1,0 +1,143 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700')
+    link(rel='stylesheet' href='assets/css/style.css')
+
+    link(rel='shortcut icon' href='assets/img/favicon.ico' type='image/x-icon')
+    link(rel='icon' href='assets/img/favicon.ico' type='image/x-icon')
+
+    title Aliança pela água
+  body
+    #fb-root
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=838219329549101";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    header.head
+      .wrapper
+        .grid
+          .grid__cell
+            a(href="").head-logo
+              img(src="assets/img/logo.png" alt="aliança pela água")
+          .grid__cell
+            ul.head-nav
+              li
+                a(href="") Sala de crise
+              li
+                a(href="") Faça Parte
+              li
+                a(href="").head-nav__contact Contato
+
+    section.banner
+      .wrapper
+        h1.banner__title Quem Somos
+        p A Aliança pela Água é uma coalizão de sociedade civil que existe para contribuir com a construção de segurança hídrica em São Paulo.
+
+        .banner-social
+          h4.banner-social__title Redes Sociais
+          ul.banner-social-nav
+            li
+              a(href="").banner-social-nav__item
+                img(src="assets/img/facebook.png" alt="Facebook")
+            li
+              a(href="").banner-social-nav__item
+                img(src="assets/img/twitter.png" alt="Twitter")
+
+    section.principles
+      .wrapper
+        h1.principles__title Nossos princípios
+        .grid
+          .grid__cell
+            .principles-item
+              .principles-item__icon
+                img(src="assets/img/p-1.png")
+              .principles-item__body
+                p Água não é mercadoria, mas um bem essencial à vida cujo acesso é um direito humano.
+          .grid__cell
+            .principles-item
+              .principles-item__icon
+                img(src="assets/img/p-2.png")
+              .principles-item__body
+                p Todos os níveis de governo têm responsabilidades sobre a água e devem estar a serviço da população.
+          .grid__cell
+            .principles-item
+              .principles-item__icon
+                img(src="assets/img/p-3.png")
+              .principles-item__body
+                p As soluções propostas para enfrentar a crise devem obrigatoriamente incluir recuperação e recomposição das fontes de água existentes.
+
+    section.goals
+      .wrapper
+        h1.goals__title Nossos objetivos
+        .grid
+          .grid__cell
+            .media
+              img(src="assets/img/goals-1.png").media__img
+              .media__body
+                p Elaborar propostas para uma nova cultura de cuidado a água no Estado de São Paulo.
+            .media
+              img(src="assets/img/goals-2.png").media__img
+              .media__body
+                p Articular e somar esforços das diferentes organizações, movimentos, coletivos e ativistas envolvidos com a causa.
+            .media
+              img(src="assets/img/goals-3.png").media__img
+              .media__body
+                p Fazer interlocução com poder público e iniciativa privada para a articulação de pactos sociais.
+          .grid__cell
+            .media
+              img(src="assets/img/goals-4.png").media__img
+              .media__body
+                p Promover o debate público sobre a situação dos recursos hídricos, oferecer análises sobre a situação atual e perspectivas futuras.
+            .media
+              img(src="assets/img/goals-5.png").media__img
+              .media__body
+                p Colaborar nos esforços emergenciais de enfrentamento da crise.
+            .media
+              img(src="assets/img/goals-6.png").media__img
+              .media__body
+                p Ser uma incubadora de iniciativas que contribuiam com nova cultura de cuidado com a água.
+
+    section.partners
+      .wrapper
+        h1.partners__title Quem faz parte
+        p Organizações, movimentos, coletivos e ativistas que colaboram no planejamento, execução e divulgação das iniciativas da Aliança e estão comprometidos com seus princípios e propostas.
+        .partners__action
+          a(href="").btn.btn--primary Faça parte
+
+    section.partners-gallery
+      .wrapper
+        img(src="assets/img/partners.jpg").partners-gallery__img
+
+    footer.foot
+      .wrapper
+        .grid
+          .grid__cell
+            h5.foot__title Siga a aliança pela Água
+            .fb-page(data-href='https://www.facebook.com/aliancapelaagua', data-small-header='true', data-adapt-container-width='true', data-hide-cover='true', data-show-facepile='true', data-show-posts='false')
+                .fb-xfbml-parse-ignore
+                    blockquote(cite='https://www.facebook.com/aliancapelaagua')
+                      a(href='https://www.facebook.com/aliancapelaagua') Alian&ccedil;a pela &Aacute;gua
+
+          .grid__cell
+            h5.foot__title Conselho Gestor
+            img(src="assets/img/foot-img.jpg")
+          .grid__cell
+            h5.foot__title Contato
+            ul.foot__list
+              li
+                a(href="") contato@aguasp.com.br
+
+            h5.foot__title Imprensa
+            ul.foot__list
+              li
+                a(href="") imprensa@aguasp.com.br
+

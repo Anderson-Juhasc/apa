@@ -1,0 +1,48 @@
+.head
+  background: #2e4f7c
+  width: 100%
+  +media-query(desk)
+    position: fixed
+    left: 0
+    top: 0
+  .grid__cell
+    +media-query(desk)
+      width: 50%
+
+.head-logo
+  background: #23456b
+  color: #b1f0a1
+  display: block
+  margin: 0 -24px
+  text-align: center
+  > img
+    display: inline-block
+    margin-bottom: -3px
+  +media-query(desk)
+    display: inline-block
+
+.head-nav
+  list-style: none
+  margin: 12px 0
+  padding: 0
+  > li
+    margin-bottom: 3px
+    &:last-child
+      margin-bottom: 0
+    > a
+      color: #fff
+      border-radius: 4px
+      display: block
+      padding: 12px
+      text-align: center
+      &:hover
+        background: #91df6f
+  +media-query(desk)
+    margin: 0
+    text-align: right
+    > li
+      display: inline-block
+      margin-left: 3px
+
+.head-nav__contact
+  background: #23456b
